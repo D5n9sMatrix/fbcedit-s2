@@ -25,7 +25,7 @@
 		Dim As MainMenu MainMenu1
 		Dim As MenuItem mnuFile, mnuFileNew, mnuFileOpen, mnuFileSave, mnuFileSaveAs, mnuFileBar1, mnuFileBar2, mnuFileClose, mnuFileSaveAll, mnuFileBar3, mnuFileProperties, mnuFilePrintSetup, mnuFilePrintPreview, mnuFilePrint, mnuFileBar4, mnuFileSend, mnuFileBar5, mnuFileExit
 		Dim As MenuItem mnuEdit, mnuEditUndo, mnuRedo, mnuEditCopy, mnuEditCut, mnuEditPaste, mnuEditBar1, mnuEditPasteSpecial, mnuEditBar2, mnuEditDSelectAll, mnuEditInvertSelection
-		Dim As MenuItem mnuView, mnuViewToolbar, mnuViewStatusBar, mnuViewBar1, mnuViewLargeIcons, mnuViewSmallIcons, mnuViewList, mnuViewDetails, mnuViewBar2, mnuViewArrangeIcons, mnuVAIByName, mnuVAIByType, mnuVAIBySize, mnuVAIByDate, mnuViewLineUpIcons, mnuViewBar3, mnuViewRefresh , mnuViewOptions
+		Dim As MenuItem mnuView, mnuViewToolbar, mnuViewStatusBar, mnuViewBar1, mnuViewLargeIcons, mnuViewSmallIcons, mnuViewList, mnuViewDetails, mnuViewBar2, mnuViewArrangeIcons, mnuVAIByName, mnuVAIByType, mnuVAIBySize, mnuVAIByDate, mnuViewLineUpIcons, mnuViewBar3, mnuViewContinue , mnuViewOptions
 		Dim As MenuItem mnuHelp, mnuHelpContent, mnuHelpAbout, mnuHelpSearch, mnuHelpBar1
 		Dim As MenuItem mnuWindow, mnuWindowNewWindow, mnuWindowCascade, mnuWindowTileHorizontal, mnuWindowTileVertical, mnuWindowArrangeIcons, mnuWindowBar1
 		Dim As ReBar ReBar1
@@ -387,9 +387,9 @@
 			.Designer = @This
 			.Parent = @mnuView
 		End With
-		With mnuViewRefresh
-			.Name = "mnuViewRefresh"
-			.Caption         =   "&Refresh"
+		With mnuViewContinue
+			.Name = "mnuViewContinue"
+			.Caption         =   "&Continue"
 			.Designer = @This
 			.Parent = @mnuView
 		End With
